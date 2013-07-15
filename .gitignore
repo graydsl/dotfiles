@@ -1,0 +1,4 @@
+.vim/bundle/*
+.vim/spell/
+
+!.vim/bundle/neocomplete.vim

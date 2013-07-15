@@ -103,6 +103,9 @@ set cmdheight=1
 " Display line numbers on the left
 set number
 
+" AWESOME RELATIVE LINENUMBERS!!! :D
+set relativenumber
+
 " Quickly time out on keycodes, but never time out on mappings
 set notimeout ttimeout ttimeoutlen=200
 
@@ -111,6 +114,12 @@ set pastetoggle=<F11>
 
 " Disable these annoying swapfiles
 set noswapfile
+set nobackup
+
+set switchbuf=usetab,newtab
+
+" refresh files automatically
+set autoread
 
 "------------------------------------------------------------
 " Indentation options {{{1
@@ -141,22 +150,15 @@ let mapleader=","
 " which is the default
 map Y y$
 
-" Map <C-L> (redraw screen) to also turn off search highlighting until the
-" next search
-nnoremap <C-L> :nohl<CR><C-L>
+" Redraw screen aka clear highlights
+nnoremap <leader>r :nohl<cr>
 
 " Fast edit .vimrc
-nnoremap ev :e $MYVIMRC<CR>
+nnoremap <leader>ev :e $MYVIMRC<cr>
+nnoremap <leader>sv :so $MYVIMRC<cr>
 
-" Ctrl-Space for completions. Heck Yeah!
-"inoremap <expr> <C-Space> pumvisible() \|\| &omnifunc == '' ?
-"            \ "\<lt>C-n>" :
-"            \ "\<lt>C-x>\<lt>C-o><c-r>=pumvisible() ?" .
-"            \ "\"\\<lt>c-n>\\<lt>c-p>\\<lt>c-n>\" :" .
-"            \ "\" \\<lt>bs>\\<lt>C-n>\"\<CR>"
-"imap <C-@> <C-Space>
-
-nnoremap <leader>f gg=G<CR>
+" Format whole document
+nnoremap <leader>f gg=G<cr>
 
 " fast save 
 vnoremap <C-z> <ESC>:w<cr>v
@@ -172,6 +174,10 @@ vnoremap <Up> <Nop>
 vnoremap <Down> <Nop>
 vnoremap <Left> <Nop>
 vnoremap <Right> <Nop>
+inoremap <Up> <Nop>
+inoremap <Down> <Nop>
+inoremap <Left> <Nop>
+inoremap <Right> <Nop>
 
 " switch .h/.cpp
 nnoremap <f4> :A<cr>
@@ -184,7 +190,7 @@ nnoremap <c-k> <c-w>k
 " No F1 for help
 noremap <f1> <esc>
 
-nnoremap <s-h> 0
+nnoremap <s-h> ^
 nnoremap <s-l> $
 
 " Jump around Jump around jumpjumpjump AROUND!
@@ -216,7 +222,7 @@ nnoremap zO zCzO
 " This mapping wipes out the z mark, which I never use.
 "
 " I use :sus for the rare times I want to actually background Vim.
-nnoremap <c-t> mzzMzvzz15<c-e>`z:Pulse<cr>
+"nnoremap <c-t> mzzMzvzz15<c-e>`z:Pulse<cr>
 
 " }}}
 " Plugins {{{
@@ -232,7 +238,7 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 
 " Recommended to install
 " After install, turn shell ~/.vim/bundle/vimproc, (n,g)make -f your_machines_makefile
-" NeoBundle 'Shougo/vimproc'
+NeoBundle 'Shougo/vimproc.vim'
 
 " Original repos on github
 NeoBundle 'kien/ctrlp.vim'
@@ -241,19 +247,18 @@ NeoBundle 'majutsushi/tagbar'
 "NeoBundle 'Shougo/neocomplete'
 "NeoBundle 'Shougo/neosnippet'
 NeoBundle 'digitaltoad/vim-jade'
-NeoBundle 'Lokaltog/vim-easymotion'
+"NeoBundle 'Lokaltog/vim-easymotion'
 NeoBundle 'flazz/vim-colorschemes'
 NeoBundle 'Lokaltog/vim-powerline'
-"NeoBundle 'jiangmiao/auto-pairs'
+NeoBundle 'jiangmiao/auto-pairs'
 NeoBundle 'scrooloose/nerdcommenter'
 NeoBundle 'nathanaelkane/vim-indent-guides'
 NeoBundle 'scrooloose/syntastic'
-NeoBundle 'SirVer/ultisnips'
-NeoBundle 'Valloric/YouCompleteMe'
-NeoBundle 'Raimondi/delimitMate'
 NeoBundle 'pangloss/vim-javascript'
 NeoBundle 'groenewege/vim-less'
-"NeoBundle 'altercation/vim-colors-solarized'
+NeoBundle 'honza/vim-snippets'
+NeoBundle 'tikhomirov/vim-glsl'
+"NeoBundle 'tpope/vim-surround'
 
 " vim-scripts repos
 NeoBundle 'a.vim'
@@ -293,22 +298,19 @@ set wildignore+=*.o,*.d
 " move to tag in file
 nnoremap <c-t> :CtrlPBufTag<cr> 
 nnoremap <c-p> :CtrlPMixed<cr>
-"}}}
-" minibufexpl {{{
-"let g:miniBufExplMapWindowNavVim = 1 
-"let g:miniBufExplMapWindowNavArrows = 1 
-"let g:miniBufExplMapCTabSwitchBufs = 1 
-"}}}
-" YouCompleteMe {{{
-let g:ycm_global_ycm_extra_conf = '~/.vim/bundle/YouCompleteMe/cpp/ycm/.ycm_extra_conf.py'
 
-let g:ycm_key_list_select_completion = ['<Down>']
-let g:ycm_key_list_previous_completion = ['<Up>']
+let g:ctrlp_prompt_mappings = {
+    \ 'AcceptSelection("e")': ['<c-t>'],
+    \ 'AcceptSelection("t")': ['<cr>', '<2-LeftMouse>'],
+    \ }
 "}}}
-" UltiSnips {{{
-let g:UltiSnipsExpandTrigger="<tab>"
-let g:UltiSnipsJumpForwardTrigger="<tab>"
-let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
+" Syntastic {{{
+let g:syntastic_cpp_compiler_options = ' -std=c++11'
+" }}}
+" vim-javascript {{{
+let g:html_indent_inctags = "html,body,head,tbody"
+let g:html_indent_scriptl = "inc"
+let g:html_indent_style1 = "inc"
 " }}}
 " }}}
 " Language Specifics {{{
@@ -347,13 +349,20 @@ syntax on
 
 set t_Co=256
 set background=dark
-colorscheme molokai
+colorscheme Monokai
 " }}}
 " Autocommands {{{
 " VIMRC Live Reloading {{{
 augroup myvimrchooks
     au!
     autocmd bufwritepost .vimrc source ~/.vimrc
+augroup END
+" }}}
+" Random AU {{{
+augroup relativeLineNumbers
+    au!
+    autocmd InsertEnter * :set number
+    autocmd InsertLeave * :set relativenumber
 augroup END
 " }}}
 " }}}
