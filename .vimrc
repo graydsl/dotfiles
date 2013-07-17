@@ -244,21 +244,26 @@ NeoBundle 'Shougo/vimproc.vim'
 NeoBundle 'kien/ctrlp.vim'
 NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'majutsushi/tagbar'
-"NeoBundle 'Shougo/neocomplete'
-"NeoBundle 'Shougo/neosnippet'
-NeoBundle 'digitaltoad/vim-jade'
-"NeoBundle 'Lokaltog/vim-easymotion'
 NeoBundle 'flazz/vim-colorschemes'
 NeoBundle 'Lokaltog/vim-powerline'
 NeoBundle 'jiangmiao/auto-pairs'
 NeoBundle 'scrooloose/nerdcommenter'
 NeoBundle 'nathanaelkane/vim-indent-guides'
 NeoBundle 'scrooloose/syntastic'
+
+" Language Plugins
 NeoBundle 'pangloss/vim-javascript'
 NeoBundle 'groenewege/vim-less'
-NeoBundle 'honza/vim-snippets'
 NeoBundle 'tikhomirov/vim-glsl'
-"NeoBundle 'tpope/vim-surround'
+NeoBundle 'digitaltoad/vim-jade'
+
+" Autocompletion
+NeoBundle 'Valloric/YouCompleteMe'
+
+" Snipmate and deps
+" TODO: ULTISNIPS
+NeoBundle 'SirVer/ultisnips'
+NeoBundle 'honza/vim-snippets'
 
 " vim-scripts repos
 NeoBundle 'a.vim'
@@ -311,6 +316,15 @@ let g:syntastic_cpp_compiler_options = ' -std=c++11'
 let g:html_indent_inctags = "html,body,head,tbody"
 let g:html_indent_scriptl = "inc"
 let g:html_indent_style1 = "inc"
+" }}}
+" youcompleteme {{{
+let g:ycm_global_ycm_extra_conf = '~/.vim/bundle/YouCompleteMe/cpp/ycm/.ycm_extra_conf.py'
+let g:ycm_autoclose_preview_window_after_insertion = 1 
+" }}}
+" UltiSnips {{{
+let g:UltiSnipsExpandTrigger="<c-j>"
+let g:UltiSnipsJumpForwardTrigger="<c-j>"
+let g:UltiSnipsJumpBackwardTrigger="<c-k>"
 " }}}
 " }}}
 " Language Specifics {{{
