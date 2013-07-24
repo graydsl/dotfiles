@@ -154,7 +154,7 @@ map Y y$
 nnoremap <leader>r :nohl<cr>
 
 " Fast edit .vimrc
-nnoremap <leader>ev :e $MYVIMRC<cr>
+nnoremap <leader>ev :tabedit $MYVIMRC<cr>
 nnoremap <leader>sv :so $MYVIMRC<cr>
 
 " Format whole document
@@ -190,8 +190,8 @@ nnoremap <c-k> <c-w>k
 " No F1 for help
 noremap <f1> <esc>
 
-nnoremap <s-h> ^
-nnoremap <s-l> $
+" nnoremap <s-h> ^
+" nnoremap <s-l> $
 
 " Jump around Jump around jumpjumpjump AROUND!
 nnoremap J 5j
@@ -248,11 +248,11 @@ NeoBundle 'flazz/vim-colorschemes'
 NeoBundle 'Lokaltog/vim-powerline'
 NeoBundle 'jiangmiao/auto-pairs'
 NeoBundle 'scrooloose/nerdcommenter'
-NeoBundle 'nathanaelkane/vim-indent-guides'
 NeoBundle 'scrooloose/syntastic'
 
 " Language Plugins
 NeoBundle 'pangloss/vim-javascript'
+"NeoBundle 'marijnh/tern_for_vim'
 NeoBundle 'groenewege/vim-less'
 NeoBundle 'tikhomirov/vim-glsl'
 NeoBundle 'digitaltoad/vim-jade'
@@ -325,6 +325,8 @@ let g:ycm_autoclose_preview_window_after_insertion = 1
 let g:UltiSnipsExpandTrigger="<c-j>"
 let g:UltiSnipsJumpForwardTrigger="<c-j>"
 let g:UltiSnipsJumpBackwardTrigger="<c-k>"
+let always_use_first_snippet=1
+let g:always_use_first_snippet=1
 " }}}
 " }}}
 " Language Specifics {{{
