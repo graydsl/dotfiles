@@ -49,3 +49,5 @@ source $ZSH/oh-my-zsh.sh
 
 . ~/.zscript/z.sh
 alias tmux="tmux -2"
+
+vim() STTY=-ixon command vim "$@"
