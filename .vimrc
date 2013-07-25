@@ -161,15 +161,20 @@ nnoremap <leader>sv :so $MYVIMRC<cr>
 nnoremap <leader>f gg=G<cr>
 
 " fast save 
-vnoremap <C-z> <ESC>:w<cr>v
-nnoremap <C-z> :w<cr>
-inoremap <C-z> <ESC>:w<cr>a
+"vnoremap <C-s> <ESC>:w<cr>v
+"nnoremap <C-s> :w<cr>
+"inoremap <C-s> <ESC>:w<cr>a
+
+" Use CTRL-S for saving, also in Insert mode
+noremap <C-S> :update<CR>
+vnoremap <C-S> <C-C>:update<CR>
+inoremap <C-S> <C-O>:update<CR>
 
 " remapped arrows to NOTHING --- i will die :D
-noremap <Up> <Nop>
-noremap <Down> <Nop>
-noremap <Left> <Nop>
-noremap <Right> <Nop>
+nnoremap <Up> <Nop>
+nnoremap <Down> <Nop>
+nnoremap <Left> :tabp<cr>
+nnoremap <Right> :tabn<cr>
 vnoremap <Up> <Nop>
 vnoremap <Down> <Nop>
 vnoremap <Left> <Nop>
@@ -196,6 +201,8 @@ noremap <f1> <esc>
 " Jump around Jump around jumpjumpjump AROUND!
 nnoremap J 5j
 nnoremap K 5k
+
+nnoremap <c-w> :tabclose<cr>
 
 "------------------------------------------------------------}}}
 " Folding {{{
@@ -249,6 +256,7 @@ NeoBundle 'Lokaltog/vim-powerline'
 NeoBundle 'jiangmiao/auto-pairs'
 NeoBundle 'scrooloose/nerdcommenter'
 NeoBundle 'scrooloose/syntastic'
+NeoBundle 'tpope/vim-surround'
 
 " Language Plugins
 NeoBundle 'pangloss/vim-javascript'
