@@ -204,6 +204,8 @@ nnoremap K 5k
 
 nnoremap <c-w> :tabclose<cr>
 
+map <ESC>[B <Down>
+
 "------------------------------------------------------------}}}
 " Folding {{{
 
