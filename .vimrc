@@ -167,8 +167,8 @@ nnoremap <leader>f gg=G<cr>
 
 " Use CTRL-S for saving, also in Insert mode
 noremap <C-S> :update<CR>
-vnoremap <C-S> <C-C>:update<CR>
-inoremap <C-S> <C-O>:update<CR>
+vnoremap <C-S> <ESC>:update<CR>
+inoremap <C-S> <ESC>:update<CR>
 
 " remapped arrows to NOTHING --- i will die :D
 nnoremap <Up> <Nop>
