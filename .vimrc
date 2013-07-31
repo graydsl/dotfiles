@@ -121,6 +121,9 @@ set switchbuf=usetab,newtab
 " refresh files automatically
 set autoread
 
+set splitbelow
+set splitright
+
 "------------------------------------------------------------
 " Indentation options {{{1
 
@@ -201,8 +204,6 @@ noremap <f1> <esc>
 " Jump around Jump around jumpjumpjump AROUND!
 nnoremap J 5j
 nnoremap K 5k
-
-nnoremap <c-w> :tabclose<cr>
 
 map <ESC>[B <Down>
 
