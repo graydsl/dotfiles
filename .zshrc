@@ -51,3 +51,6 @@ source $ZSH/oh-my-zsh.sh
 alias tmux="tmux -2"
 
 vim() STTY=-ixon command vim "$@"
+
+alias "backlight"="/bin/bash /usr/bin/asus-screen-brightness"
+alias "svim"="sudo vim -u /home/jsbeckr/.vimrc @$"
