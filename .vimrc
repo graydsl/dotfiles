@@ -207,6 +207,9 @@ nnoremap K 5k
 
 map <ESC>[B <Down>
 
+" Allow saving of files as sudo when I forgot to start vim using sudo.
+cmap w!! w !sudo tee > /dev/null %
+
 "------------------------------------------------------------}}}
 " Folding {{{
 
@@ -255,11 +258,12 @@ NeoBundle 'kien/ctrlp.vim'
 NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'majutsushi/tagbar'
 NeoBundle 'flazz/vim-colorschemes'
-NeoBundle 'Lokaltog/vim-powerline'
 NeoBundle 'jiangmiao/auto-pairs'
 NeoBundle 'scrooloose/nerdcommenter'
 NeoBundle 'scrooloose/syntastic'
 NeoBundle 'tpope/vim-surround'
+NeoBundle 'jdonaldson/vaxe'
+NeoBundle 'bling/vim-airline'
 
 " Language Plugins
 NeoBundle 'pangloss/vim-javascript'
