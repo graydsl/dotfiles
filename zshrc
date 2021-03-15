@@ -1,4 +1,4 @@
-# If you come from bash you might have to change your $PATH.
+
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
@@ -42,7 +42,7 @@ HYPHEN_INSENSITIVE="true"
 # DISABLE_AUTO_TITLE="true"
 
 # Uncomment the following line to enable command auto-correction.
-ENABLE_CORRECTION="true"
+# ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
 # Caution: this setting can cause issues with multiline prompts (zsh 5.7.1 and newer seem to work)
@@ -70,7 +70,7 @@ HIST_STAMPS="yyyy-mm-dd"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git docker-compose docker dotenv autojump fzf osx mix-fast zsh_reload)
+plugins=(git docker-compose docker dotenv autojump osx mix-fast zsh_reload)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -89,6 +89,6 @@ alias vimconfig="vim ~/.config/nvim/init.vim"
 alias resource="source ~/.zshrc"
 
 export ERL_AFLAGS="-kernel shell_history enabled"
-
+export TERM=xterm-256color
 
 echo "zshrc loaded..."
