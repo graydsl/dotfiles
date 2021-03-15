@@ -2,8 +2,10 @@ if (has("termguicolors"))
     set termguicolors
 endif
 
-colorscheme onedark
+let ayucolor="mirage" 
+
+colorscheme ayu
 
 let g:lightline = {
-      \ 'colorscheme': 'onedark',
+      \ 'colorscheme': 'ayu',
       \ }

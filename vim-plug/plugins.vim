@@ -26,6 +26,7 @@ Plug 'psliwka/vim-smoothie'
 " Colorschemes
 Plug 'joshdick/onedark.vim'
 Plug 'Rigellute/shades-of-purple.vim'
+Plug 'ayu-theme/ayu-vim'
 
 " TPOPE STUFF
 Plug 'tpope/vim-surround'
@@ -41,5 +42,8 @@ Plug 'sbdchd/neoformat'
 
 " TEST
 Plug 'mhinz/vim-signify'
+Plug 'vimwiki/vimwiki'
+Plug 'hrsh7th/vim-vsnip'
+Plug 'hrsh7th/vim-vsnip-integ'
 
 call plug#end()
