@@ -18,7 +18,7 @@ set backspace=indent,eol,start
 set scrolloff=8
 set noshowmode
 set laststatus=2
-set signcolumn=auto:4
+set signcolumn=yes:2
 
 set history=1000
 set tabpagemax=50
@@ -27,7 +27,7 @@ set splitbelow
 set splitright
 
 set mouse=a
-set updatetime=50
+set updatetime=100
 
 set nohlsearch
 

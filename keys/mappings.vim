@@ -1,10 +1,10 @@
 " Window Management
 nnoremap <leader>v :vsplit<CR>
 nnoremap <leader>s :split<CR>
-nnoremap <leader>h <C-w>h
-nnoremap <leader>j <C-w>j
-nnoremap <leader>k <C-w>k
-nnoremap <leader>l <C-w>l
+nnoremap <C-h> <C-w>h
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-l> <C-w>l
 
 " Terminal window navigation
 tnoremap <C-h> <C-\><C-N><C-w>h
@@ -49,3 +49,6 @@ inoremap <silent> <expr><TAB> pumvisible() ? "\<C-n>" : "\<TAB>"
 
 " easy change root dir
 nnoremap <leader>cd :cd %:p:h<CR>
+
+" quick source
+nnoremap <leader>vr :so ~/.config/nvim/init.vim<CR>

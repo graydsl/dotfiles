@@ -13,6 +13,8 @@ source ~/.config/nvim/plug-config/saga.vim
 source ~/.config/nvim/plug-config/nerdtree.vim
 source ~/.config/nvim/plug-config/telescope.vim
 
+source ~/.config/nvim/plug-config/test.vim
+
 augroup highlight_yank
     autocmd!
     autocmd TextYankPost * silent! lua require'vim.highlight'.on_yank({timeout = 120})
