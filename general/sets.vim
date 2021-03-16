@@ -17,7 +17,7 @@ set backspace=indent,eol,start
 
 set scrolloff=8
 set noshowmode
-set laststatus=2
+set cmdheight=2
 set signcolumn=yes:2
 
 set history=1000
@@ -30,5 +30,7 @@ set mouse=a
 set updatetime=100
 
 set nohlsearch
+
+set shortmess+=c
 
 let mapleader = " "

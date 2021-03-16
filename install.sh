@@ -11,3 +11,5 @@ ln -sv ~/dotfiles/keys ~/.config/nvim/
 ln -sv ~/dotfiles/zshrc ~/.zshrc
 
 ln -sv ~/dotfiles/alacritty.yml ~/.config/alacritty/
+
+ln -sv ~/dotfiles/.tmux.conf ~/

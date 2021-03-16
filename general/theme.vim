@@ -2,10 +2,5 @@ if (has("termguicolors"))
     set termguicolors
 endif
 
-let ayucolor="mirage" 
+colorscheme gruvbox
 
-colorscheme ayu
-
-let g:lightline = {
-      \ 'colorscheme': 'ayu',
-      \ }

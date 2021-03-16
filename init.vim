@@ -12,6 +12,7 @@ source ~/.config/nvim/plug-config/compe.vim
 source ~/.config/nvim/plug-config/saga.vim
 source ~/.config/nvim/plug-config/nerdtree.vim
 source ~/.config/nvim/plug-config/telescope.vim
+source ~/.config/nvim/plug-config/lightline.vim
 
 source ~/.config/nvim/plug-config/test.vim
 

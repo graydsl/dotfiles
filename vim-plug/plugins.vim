@@ -27,6 +27,8 @@ Plug 'psliwka/vim-smoothie'
 Plug 'joshdick/onedark.vim'
 Plug 'Rigellute/shades-of-purple.vim'
 Plug 'ayu-theme/ayu-vim'
+Plug 'flrnprz/plastic.vim'
+Plug 'morhetz/gruvbox'
 
 " TPOPE STUFF
 Plug 'tpope/vim-surround'
@@ -45,5 +47,9 @@ Plug 'mhinz/vim-signify'
 Plug 'vimwiki/vimwiki'
 Plug 'hrsh7th/vim-vsnip'
 Plug 'hrsh7th/vim-vsnip-integ'
+Plug 'ryanoasis/vim-devicons'
+Plug 'tpope/vim-unimpaired'
+" Plug 'alvan/vim-closetag'
+" Plug 'jiangmiao/auto-pairs'
 
 call plug#end()
