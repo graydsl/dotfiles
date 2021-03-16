@@ -49,6 +49,7 @@ Plug 'hrsh7th/vim-vsnip'
 Plug 'hrsh7th/vim-vsnip-integ'
 Plug 'ryanoasis/vim-devicons'
 Plug 'tpope/vim-unimpaired'
+Plug 'mbbill/undotree'
 " Plug 'alvan/vim-closetag'
 " Plug 'jiangmiao/auto-pairs'
 
