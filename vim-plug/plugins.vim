@@ -15,10 +15,12 @@ Plug 'nvim-telescope/telescope.nvim'
 " Language Server Stuff
 Plug 'neovim/nvim-lspconfig'
 Plug 'glepnir/lspsaga.nvim'
-Plug 'hrsh7th/nvim-compe' 
+Plug 'hrsh7th/nvim-compe'
 
-" NERDTree
-Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
+" File Explorer
+" Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
+Plug 'kyazdani42/nvim-web-devicons' " for file icons
+Plug 'kyazdani42/nvim-tree.lua'
 
 " Scrolling
 Plug 'psliwka/vim-smoothie'
@@ -39,8 +41,8 @@ Plug 'tpope/vim-fugitive'
 " WHICH KEYY???
 Plug 'liuchengxu/vim-which-key'
 
-" Neoformat ?
-Plug 'sbdchd/neoformat'
+" Formatting and Linting
+Plug 'prettier/vim-prettier', { 'do': 'npm install' }
 
 " TEST
 Plug 'mhinz/vim-signify'
@@ -50,6 +52,7 @@ Plug 'hrsh7th/vim-vsnip-integ'
 Plug 'ryanoasis/vim-devicons'
 Plug 'tpope/vim-unimpaired'
 Plug 'mbbill/undotree'
+Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 " Plug 'alvan/vim-closetag'
 " Plug 'jiangmiao/auto-pairs'
 
