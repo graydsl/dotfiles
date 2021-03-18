@@ -3,13 +3,13 @@ source ~/.config/nvim/vim-plug/plugins.vim
 source ~/.config/nvim/general/theme.vim
 source ~/.config/nvim/keys/mappings.vim
 
-luafile ~/.config/nvim/lua/lsp-config.lua
-luafile ~/.config/nvim/lua/plugins/compe.lua
-luafile ~/.config/nvim/lua/plugins/saga.lua
+" luafile ~/.config/nvim/lua/lsp-config.lua
+" luafile ~/.config/nvim/lua/plugins/compe.lua
+" luafile ~/.config/nvim/lua/plugins/saga.lua
 
-source ~/.config/nvim/plug-config/lsp-config.vim
-source ~/.config/nvim/plug-config/compe.vim
-source ~/.config/nvim/plug-config/saga.vim
+" source ~/.config/nvim/plug-config/lsp-config.vim
+" source ~/.config/nvim/plug-config/compe.vim
+" source ~/.config/nvim/plug-config/saga.vim
 source ~/.config/nvim/plug-config/telescope.vim
 source ~/.config/nvim/plug-config/lightline.vim
 

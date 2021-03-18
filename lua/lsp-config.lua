@@ -1,7 +1,6 @@
 -- TODO: html https://github.com/neovim/nvim-lspconfig/blob/master/CONFIG.md#html
 -- https://github.com/rrethy/vim-illuminate
 
-
 local lspconfig = require('lspconfig')
 
 lspconfig.tsserver.setup{}
@@ -20,7 +19,6 @@ lspconfig.diagnosticls.setup{
 			javascriptreact = "eslint";
 			typescriptreact = "eslint";
 			typescript = "eslint";
-			typescriptreact = "eslint";
 		};
 		linters = {
 			eslint = {
@@ -36,7 +34,6 @@ lspconfig.diagnosticls.setup{
 					"--format";
 					"json";
 				};
-				sourceName = "eslint";
 				parseJson = {
 					errorsRoot = "[0].messages";
 					line = "line";

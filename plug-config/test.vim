@@ -15,3 +15,11 @@ let g:prettier#autoformat_require_pragma = 0
 nnoremap <Leader>n :NvimTreeToggle<CR>
 
 let g:nvim_tree_indent_markers = 1
+
+let g:blamer_enabled = 1
+let g:blamer_delay = 500
+
+nnoremap <silent> <C-q> :Bdelete menu<CR>
+
+" use <c-space>for trigger completion
+inoremap <silent><expr> <c-space> coc#refresh()

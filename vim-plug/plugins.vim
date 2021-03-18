@@ -13,12 +13,12 @@ Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
 
 " Language Server Stuff
-Plug 'neovim/nvim-lspconfig'
-Plug 'glepnir/lspsaga.nvim'
-Plug 'hrsh7th/nvim-compe'
+" Plug 'neovim/nvim-lspconfig'
+" Plug 'glepnir/lspsaga.nvim'
+" Plug 'hrsh7th/nvim-compe'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " File Explorer
-" Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'kyazdani42/nvim-web-devicons' " for file icons
 Plug 'kyazdani42/nvim-tree.lua'
 
@@ -53,7 +53,8 @@ Plug 'ryanoasis/vim-devicons'
 Plug 'tpope/vim-unimpaired'
 Plug 'mbbill/undotree'
 Plug 'mg979/vim-visual-multi', {'branch': 'master'}
-" Plug 'alvan/vim-closetag'
+Plug 'APZelos/blamer.nvim'
 " Plug 'jiangmiao/auto-pairs'
+Plug 'Asheq/close-buffers.vim'
 
 call plug#end()
