@@ -44,8 +44,6 @@ nnoremap <silent> <C-s> :w<CR>
 " nnoremap <silent> <C-Q> :wq!<CR>
 " Use control-c instead of escape
 nnoremap <silent> <C-c> <Esc>
-" <TAB>: completion.
-inoremap <silent> <expr><TAB> pumvisible() ? "\<C-n>" : "\<TAB>"
 
 " easy change root dir
 nnoremap <leader>cd :cd %:p:h<CR>
