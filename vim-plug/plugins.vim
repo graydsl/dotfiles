@@ -41,9 +41,6 @@ Plug 'tpope/vim-fugitive'
 " WHICH KEYY???
 Plug 'liuchengxu/vim-which-key'
 
-" Formatting and Linting
-Plug 'prettier/vim-prettier', { 'do': 'npm install' }
-
 " TEST
 Plug 'mhinz/vim-signify'
 Plug 'vimwiki/vimwiki'
@@ -54,7 +51,12 @@ Plug 'tpope/vim-unimpaired'
 Plug 'mbbill/undotree'
 Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 Plug 'APZelos/blamer.nvim'
-" Plug 'jiangmiao/auto-pairs'
 Plug 'Asheq/close-buffers.vim'
+Plug 'mattn/emmet-vim'
+" Plug 'jiangmiao/auto-pairs'
+Plug 'tpope/vim-endwise'
+Plug 'rstacruz/vim-closer'
+Plug 'mhinz/vim-startify'
+Plug 'lilydjwg/colorizer'
 
 call plug#end()

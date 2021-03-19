@@ -18,7 +18,8 @@ set backspace=indent,eol,start
 set scrolloff=8
 set noshowmode
 set cmdheight=2
-set signcolumn=yes:2
+" set signcolumn=yes:3
+set signcolumn=number
 
 set history=1000
 set tabpagemax=50
@@ -27,10 +28,11 @@ set splitbelow
 set splitright
 
 set mouse=a
-set updatetime=100
+set updatetime=300
 
 set nohlsearch
 
+" Don't pass messages to |ins-completion-menu|.
 set shortmess+=c
 
 let mapleader = " "

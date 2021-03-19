@@ -20,8 +20,6 @@ augroup highlight_yank
     autocmd TextYankPost * silent! lua require'vim.highlight'.on_yank({timeout = 120})
 augroup END
 
-autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
-
 " TODO: move to own file and stuff
 
 " Delete buffer while keeping window layout (don't close buffer's windows).
