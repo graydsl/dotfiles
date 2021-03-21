@@ -15,7 +15,7 @@ source ~/.config/nvim/plug-config/lightline.vim
 
 source ~/.config/nvim/plug-config/test.vim
 
-luafile ~/.config/nvim/lua/plugins/telescope.lua
+luafile ~/.config/nvim/lua/jsbeckr/telescope.lua
 
 " lua require('vimrc')
 
