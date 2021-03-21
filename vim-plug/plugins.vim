@@ -1,4 +1,6 @@
 call plug#begin(stdpath('data') . '/plugged')
+Plug 'svermeulen/vimpeccable'
+" Plug 'svermeulen/vimpeccable-lua-vimrc-example'
 
 " Languages and Highlighting
 Plug 'sheerun/vim-polyglot'
@@ -58,5 +60,9 @@ Plug 'mattn/emmet-vim'
 " Plug 'rstacruz/vim-closer'
 Plug 'mhinz/vim-startify'
 Plug 'lilydjwg/colorizer'
+
+Plug 'junegunn/goyo.vim'
+
+Plug 'elixir-editors/vim-elixir'
 
 call plug#end()

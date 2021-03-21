@@ -1,9 +1,7 @@
 require('telescope').setup{
   defaults = {
-    color_devicons = true
-    prompt_prefix = "%> "
-    selection_caret = "%> "
-  }
+    color_devicons = true,
+  },
   extensions = {
     fzf_writer = {
         minimum_grep_characters = 2,

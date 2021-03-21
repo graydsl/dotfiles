@@ -15,6 +15,10 @@ source ~/.config/nvim/plug-config/lightline.vim
 
 source ~/.config/nvim/plug-config/test.vim
 
+luafile ~/.config/nvim/lua/plugins/telescope.lua
+
+" lua require('vimrc')
+
 augroup highlight_yank
     autocmd!
     autocmd TextYankPost * silent! lua require'vim.highlight'.on_yank({timeout = 120})
