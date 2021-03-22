@@ -33,6 +33,7 @@ Plug 'Rigellute/shades-of-purple.vim'
 Plug 'ayu-theme/ayu-vim'
 Plug 'flrnprz/plastic.vim'
 Plug 'morhetz/gruvbox'
+Plug 'challenger-deep-theme/vim', { 'as': 'challenger-deep' }
 
 " TPOPE STUFF
 Plug 'tpope/vim-surround'

@@ -2,5 +2,4 @@ if (has("termguicolors"))
     set termguicolors
 endif
 
-colorscheme gruvbox
-
+colorscheme challenger_deep
