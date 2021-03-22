@@ -1,6 +1,6 @@
 source ~/.config/nvim/general/sets.vim
 source ~/.config/nvim/vim-plug/plugins.vim
-source ~/.config/nvim/general/theme.vim
+source ~/.config/nvim/general/theme.vim 
 source ~/.config/nvim/keys/mappings.vim
 
 " luafile ~/.config/nvim/lua/lsp-config.lua
@@ -16,8 +16,7 @@ source ~/.config/nvim/plug-config/lightline.vim
 source ~/.config/nvim/plug-config/test.vim
 
 luafile ~/.config/nvim/lua/jsbeckr/telescope.lua
-
-" lua require('vimrc')
+luafile ~/.config/nvim/lua/treesitter.lua
 
 augroup highlight_yank
     autocmd!

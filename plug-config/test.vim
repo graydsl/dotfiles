@@ -1,13 +1,17 @@
 
 
-nnoremap <C-S-n> :NvimTreeToggle<CR>
-nnoremap <leader>n :NvimTreeFindFile<CR>
+" nnoremap <leader>n :NvimTreeToggle<CR>
+" nnoremap <leader>nf :NvimTreeFindFile<CR>
 
-let g:nvim_tree_indent_markers = 1
-let g:nvim_tree_width = 40
-let g:nvim_tree_auto_close = 1 "0 by default, closes the tree when it's the last window
-let g:nvim_tree_follow = 1
+" let g:nvim_tree_indent_markers = 1
+" let g:nvim_tree_width = 40
+" let g:nvim_tree_auto_close = 1 "0 by default, closes the tree when it's the last window
+" let g:nvim_tree_follow = 1
 
+" nnoremap <leader>n :NERDTreeToggle<CR>
+" nnoremap <leader>nf :NERDTreeFind<CR>
+
+nnoremap <space>e :CocCommand explorer<CR>
 
 
 let g:blamer_enabled = 1
