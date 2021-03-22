@@ -22,6 +22,7 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " File Explorer
 Plug 'kyazdani42/nvim-web-devicons' " for file icons
+Plug 'ryanoasis/vim-devicons'
 " Plug 'kyazdani42/nvim-tree.lua'
 
 " Scrolling
@@ -47,23 +48,18 @@ Plug 'liuchengxu/vim-which-key'
 " TEST
 Plug 'mhinz/vim-signify'
 Plug 'vimwiki/vimwiki'
-Plug 'hrsh7th/vim-vsnip'
-Plug 'hrsh7th/vim-vsnip-integ'
-Plug 'ryanoasis/vim-devicons'
 Plug 'tpope/vim-unimpaired'
 Plug 'mbbill/undotree'
 Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 Plug 'APZelos/blamer.nvim'
 Plug 'Asheq/close-buffers.vim'
 Plug 'mattn/emmet-vim'
-" Plug 'jiangmiao/auto-pairs'
-" Plug 'tpope/vim-endwise'
-" Plug 'rstacruz/vim-closer'
 Plug 'mhinz/vim-startify'
 Plug 'lilydjwg/colorizer'
-
 Plug 'junegunn/goyo.vim'
-
 Plug 'elixir-editors/vim-elixir'
+
+Plug 'SirVer/ultisnips'
+Plug 'honza/vim-snippets'
 
 call plug#end()
