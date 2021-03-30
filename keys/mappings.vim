@@ -23,10 +23,10 @@ nnoremap <silent> <leader> :WhichKey '<Space>'<CR>
 " Terminal
 tnoremap <Esc> <C-\><C-n>
 
-" TAB in general mode will move to text buffer
-nnoremap <silent> <TAB> :bnext<CR>
-" SHIFT-TAB will go back
-nnoremap <silent> <S-TAB> :bprevious<CR>
+" BAR BAR
+nnoremap <silent> <Leader>bd :BufferClose<CR>
+nnoremap <silent> <TAB> :BufferNext<CR>
+nnoremap <silent> <S-TAB> :BufferPrevious<CR>
 
 " Better indenting
 vnoremap < <gv

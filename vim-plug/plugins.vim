@@ -35,6 +35,7 @@ Plug 'ayu-theme/ayu-vim'
 Plug 'flrnprz/plastic.vim'
 Plug 'morhetz/gruvbox'
 Plug 'challenger-deep-theme/vim', { 'as': 'challenger-deep' }
+Plug 'mhartington/oceanic-next'
 
 " TPOPE STUFF
 Plug 'tpope/vim-surround'
@@ -42,7 +43,11 @@ Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-fugitive'
 
+" Snippets
+Plug 'SirVer/ultisnips'
+Plug 'honza/vim-snippets'
 " WHICH KEYY???
+"
 Plug 'liuchengxu/vim-which-key'
 
 " TEST
@@ -58,8 +63,7 @@ Plug 'mhinz/vim-startify'
 Plug 'lilydjwg/colorizer'
 Plug 'junegunn/goyo.vim'
 Plug 'elixir-editors/vim-elixir'
-
-Plug 'SirVer/ultisnips'
-Plug 'honza/vim-snippets'
+Plug 'romgrk/barbar.nvim'
+Plug 'wfxr/minimap.vim'
 
 call plug#end()
