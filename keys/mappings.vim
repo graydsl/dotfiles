@@ -50,3 +50,5 @@ nnoremap <leader>cd :cd %:p:h<CR>
 
 " quick source
 nnoremap <leader>vr :so ~/.config/nvim/init.vim<CR>
+
+nnoremap <leader>bd :Bclose<CR>
